@@ -1,0 +1,17 @@
+[package]
+name = "sync_stream_struct_proc"
+version = "0.1.0"
+edition = "2021"
+description = "Procedural macros for creating sync stream structures"
+repository = "https://github.com/andrewlowndes/sync_stream/crates/sync_stream_struct_proc"
+license = "MIT OR Apache-2.0"
+keywords = ["macros"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.64"
+quote = "1.0.29"
+syn = { version = "2.0.26", features = ["full"] }
